@@ -24,6 +24,7 @@
 .logo {
     width: 50px;
     cursor: pointer;
+    -webkit-transition-duration: 2s;
 }
 
 .menu {
@@ -95,11 +96,16 @@ button {
 }
 
 h5 {
-    color: rgb(2, 25, 70);
-    font-size: 30px;
-    align-content: center;
-    text-shadow: 0 0 5px #fff;
-    padding-top: 90%;
+    padding-top: 80%;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    transition: 0.3s;
 }
 
 .card {
@@ -113,6 +119,7 @@ h5 {
     margin: 10px 15px;
     background-position: center;
     background-size: cover;
+    transition: transform 0.5s;
 }
 
 .card_1 {
@@ -120,17 +127,31 @@ h5 {
 }
 
 .card_2 {
-    background-image: url(/images/2.jpg);
+    background-image: url(/images/37245635_10209856958858956_3485051285630091264_n.jpg);
 }
 
 .card_3 {
-    background-image: url(/images/3.jpg);
+    background-image: url(/images/p3.jpg);
 }
 
 .card_4 {
     background-image: url(/images/4.jpg);
 }
 
-.card :hover {
+.card:hover {
     transform: translateY(-10px);
+}
+
+h5:hover {
+    background-color: #3e8e41;
+    color: white;
+}
+
+.text-center {
+    text-align: center!important;
+    background-color: #231942;
+}
+
+.logo:hover {
+    -webkit-transform: rotate(360deg);
 }

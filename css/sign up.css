@@ -24,6 +24,7 @@
 .logo {
     width: 50px;
     cursor: pointer;
+    -webkit-transition-duration: 2s;
 }
 
 .menu {
@@ -48,6 +49,10 @@ nav ul li a {
     color: #fff;
     font: size 13px;
     ;
+}
+
+.logo:hover {
+    -webkit-transform: rotate(360deg);
 }
 
 
