@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Hevem</title>
+
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="../html/home.html">
+                <img src="../images/logo_1.png" alt="logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+
+                    <li><a href="">DOG</a></li>
+                    <li><a href="">CAT</a></li>
+                    <li><a href="">BLOG</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+    <!--Content ------------------->
+
+    <section class="abtus">
+
+        <div class="row">
+            <div class="abtus-col">
+                <h1>we are best at our work</h1>
+                <p>
+                    The online pet adoption community where people who want to adopt a pet connect with people who need to rehome a dog or cat. Approximately 1000+ dogs & cats die every day on road in India. Our mission to provide every dog and cat a home before . Join Our
+                    Community and help setting up Pet houses in your surrounding for strays. The reason why we selected this project is that it involves a fair amount of database operations like creating, updating, deleting records and it also involves
+                    uploading and deleting files from the server.<br> • Solves a realistic problem.<br> • Lack of such a platform in our country.
+                </p>
+                <a href="/html/home.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="abtus-col">
+                <img src="/images/pratham.png">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--Footer Section-->
+    <section>
+        <footer>
+            <h4>About Us</h4>
+            <p>Approximately 1000+ dogs & cats die every day on road in India.<br> Our mission to provide every dog and cat a home before . Join Our Community and help setting up Pet houses in your surrounding for strays.</p>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Group 3 </p>
+        </footer>
+
+    </section>
+
+    <!--********************************js code ************************************-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        // -- -- -- -- -- -- -- -- - js logic
+        // for toggale menu
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
